@@ -1,0 +1,11 @@
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-icon {
+    background: transparent;
+}
+
+.table .thead-dark th {
+    background-color: #343a40 !important;
+}

@@ -1,0 +1,12 @@
+.card-body {
+    padding: 1rem;
+}
+
+.card-text {
+    color: #1B7793;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    display: block;
+}

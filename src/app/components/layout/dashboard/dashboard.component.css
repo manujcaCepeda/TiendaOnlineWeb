@@ -1,0 +1,35 @@
+.stats-icon.icon-storecoupon {
+    margin-right: 5px;
+    font-size: 54px;
+}
+
+.stats-icon.icon-storecoupon {
+    margin-right: 5px;
+    font-size: 54px;
+}
+.stats-icon {
+    height: 50px;
+    opacity: .3;
+    width: 50px;
+    margin: 0 auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    position: relative;
+}
+
+
+.pull-left {
+    float: left !important;
+}
+
+
+
+.stats-text {
+    width: 200px;
+    opacity: .75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+
+.stats-num {
+    color: #d2312e;
+    font-size: 22px;
+}
