@@ -9,6 +9,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HomeProductsComponent } from './components/product/home-products/home-products.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { StockComponent } from './components/product/stock/stock.component';
+import { ProductoService } from './services/producto.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,11 @@ import { StockComponent } from './components/product/stock/stock.component';
   ],
   imports: [
     BrowserModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
