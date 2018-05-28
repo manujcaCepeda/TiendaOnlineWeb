@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavService } from '../../../services/nav.service';
+import { Usuario } from '../../../models/usuario';
 
 @Component({
   selector: '.app-navbar',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuario;
+
+  constructor(private navService: NavService) { }
 
   ngOnInit() {
+    
+    this.navService.usuarioActual.subscribe(usuario => this.usuario = usuario);
+    //console.log("implementacion OnInit-------------------------------------------> " + this.message);
+
   }
 
+  public logout(): void {
+    this.navService.changeMessaeg(null);
+  }
 }

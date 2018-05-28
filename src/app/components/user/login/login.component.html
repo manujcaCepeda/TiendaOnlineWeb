@@ -1,0 +1,93 @@
+<div class="container">
+  <!-- <div class="{{alertStyle}}" role="alert" *ngIf="loginStatus.codigo != ''">{{loginStatus.mensaje}}</div>
+     -->
+  <div class="ml-1 mr-1 mt3">
+
+
+    <!-- <div class="form-group">
+      <label for="direccion" class="col-sm-2 ">Dirección</label>
+      <input type="text" id="direccion" placeholder="Dirección" required [(ngModel)]="usuario" name="direccion" #direccion="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <label for="direccion" class="col-sm-2 control-label">Dirección</label>
+      <div class="col-sm-12">
+        <input type="text" id="direccion" class="form-control" placeholder="Dirección" required [(ngModel)]="usuario" name="direccion"
+          #direccion="ngModel">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="direccion" class="col-sm-2 control-label">Dirección</label>
+      <div class="col-sm-12">
+        <input type="text" id="direccion" class="form-control" placeholder="Dirección" required [(ngModel)]="usuario" name="direccion"
+          #direccion="ngModel">
+        <div class="form-text text-danger" *ngIf="(direccion.touched || direccion.dirty) && direccion.errors">
+          <span *ngIf="direccion.errors.required">
+            Teléfono es requerido!
+          </span>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <div class="row justify-content-center">
+      <div class="col-sm-6 mt-5">
+        <h2>Login - Tienda Online</h2>
+        <hr/>
+        <form class="form-horizontal" (ngSubmit)="login()" #loginForm="ngForm" novalidate>
+
+
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" name="email" #email="ngModel" placeholder="Email" [(ngModel)]="usuario.correo"
+                minlength=5 maxlength=100 required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+              <div *ngIf="email.dirty && email.invalid">
+                <span class="form-text text-danger" *ngIf="email.errors.required">
+                  Your email is required.
+                </span>
+                <span class="form-text text-danger" *ngIf="email.errors.pattern">
+                  Your email is invalid.
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-12">
+              <input type="password" class="form-control" id="password" placeholder="Password" required [(ngModel)]="usuario.password"
+                name="password" #password="ngModel">
+              <div class="form-text text-danger" *ngIf="(password.touched || password.dirty) && password.errors">
+                <span *ngIf="password.errors.required">
+                  Password es requerido!
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right pr-3">
+            <a routerLink="/registro">Crear nueva cuenta</a>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-12">
+              <button type="submit" class="btn btn-success" [disabled]="!loginForm.form.valid">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
