@@ -1,4 +1,4 @@
-<div style="background-color: #f4f4f4;">
+<!-- <div style="background-color: #f4f4f4;"> -->
   <div class="container my-4 py-3">
 
     <!-- HEADER -->
@@ -7,7 +7,7 @@
       <!-- APP TITLE -->
       <div class="col-12 col-sm">
         <div class="h4">Invevtario de productos</div>
-        <div class="">Total Productos: 20</div>
+        <div class="">Total Productos: {{productos.length}}</div>
       </div>
       <!-- / APP TITLE -->
 
@@ -16,51 +16,25 @@
 
 
     <table class="table table-striped my-4">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-          <th scope="col">Accions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>
-            <button type="button" class="btn btn-icon" aria-label="Product details">
-              <i class="fa fa-pencil s-4"></i>
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>
-            <button type="button" class="btn btn-icon" aria-label="Product details">
-              <i class="fa fa-pencil s-4"></i>
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>
-            <button type="button" class="btn btn-icon" aria-label="Product details">
-              <i class="fa fa-pencil s-4"></i>
-            </button>
-          </td>
-        </tr>
-      </tbody>
+        <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Descuento</th>
+              <th scope="col">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let producto of productos; let i = index">
+              <th scope="row">{{i + 1}}</th>
+              <td>{{producto.nombre}}</td>
+              <td>{{producto.precio}} USD</td>
+              <td>{{producto.descuento}} %</td>
+              <td>{{producto.cantidad}} items</td>
+            </tr>
+          </tbody>
     </table>
 
   </div>
-</div>
+<!-- </div> -->

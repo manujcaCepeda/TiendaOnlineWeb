@@ -16,11 +16,12 @@ export class StockComponent implements OnInit {
 
   ngOnInit() {
     this.productoService.getproductos()
-        .subscribe(data => {
-          this.productos = data
-          console.log(data);
-        },
-      error => this.errorMsg = error);
+      .subscribe(data => {
+        let resp: any = data;
+        this.productos = resp.data;
+        console.log(data);
+      },
+        error => this.errorMsg = error);
   }
 
 

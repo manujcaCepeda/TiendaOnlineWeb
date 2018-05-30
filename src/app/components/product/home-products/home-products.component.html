@@ -1,263 +1,35 @@
-<div style="background-color: #f4f4f4;">
-  <div class="container mt-4">
+<div class="container">
 
-
-
-
-    <div class="row py-4">
-      <div class="col-3 mb-2">
+    <div class="row">
+      <div class="col-4 mb-2" *ngFor="let producto of productos">
         <div class="card">
           <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">{{producto.titulo}}</h5>
             <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
+              <p class="card-text col-6">Precio: </p>
+              <p class="card-text col-6">{{producto.precio}} USD </p>
             </div>
             <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
+              <p class="card-text col-6">Descuento: </p>
+              <p class="card-text col-6">{{producto.descuento}}% </p>
             </div>
             <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
+              <p class="card-text col-6">Cantidad: </p>
+              <p class="card-text col-6">{{producto.cantidad}} items </p>
             </div>
           </div>
           <div class="card-footer">
             <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-3  mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-3  mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3  mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-3  mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-3 mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-3 mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-3 mb-2">
-        <div class="card">
-          <img class="card-img-top" src="assets/img/placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <div class="row">
-              <p class="card-text col-6">Precio:</p>
-              <p class="card-text col-6">55 USD</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Descuento:</p>
-              <p class="card-text col-6">10%</p>
-            </div>
-            <div class="row">
-              <p class="card-text col-6">Cantidad:</p>
-              <p class="card-text col-6">50 items</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted">
-              <fa name="cart-arrow-down" animation="none"></fa>
-              Add item
-            </a>
-            <a class="text-muted" style="float: right !important">
-              <fa name="heart" animation="none" style="color: brown"></fa>
-              Like
-            </a>
+              <fa name="cart-arrow-down"></fa>
+              Add item</a>
+            <a class="text-muted" style="float: right !important;">
+              <fa name="heart" style="color: brown;"></fa>
+              Like</a>
           </div>
         </div>
       </div>
     </div>
+  
+  
   </div>
-</div>
